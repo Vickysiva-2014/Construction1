@@ -658,7 +658,7 @@ body {
     left: auto;
     top: auto;
     transform: none;
-    text-align: center;
+    text-align: right;
     opacity: 0;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -670,6 +670,7 @@ body {
 
   .line-1, .line-2 {
     font-size: 1.0em;
+    text-align: center;
     animation-name: fadeSlideInOut;
     animation-duration: 6s;
   }
