@@ -642,24 +642,40 @@ body {
   }
 
   .hero {
-    height: auto;
-    padding: 40px 20px;
-    background-position: center;
+    height: 70vh;
+    padding: 0 10px;
   }
 
   .hero-content {
-    font-size: 1.5em;
     height: auto;
+    padding: 10px;
+    font-size: 1.0em;
     white-space: normal;
   }
 
   .line {
-    font-size: 1.5em;
-    position: static;
+    position: relative;
+    left: auto;
+    top: auto;
     transform: none;
-    animation: none;
-    opacity: 1;
-    margin-bottom: 10px;
+    text-align: center;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    white-space: normal;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .line-1, .line-2 {
+    font-size: 1.0em;
+    animation-name: fadeSlideInOut;
+    animation-duration: 6s;
+  }
+
+  .line-2 {
+    animation-delay: 3s;
   }
 
   .clients-logos {
