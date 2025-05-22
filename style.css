@@ -640,37 +640,38 @@ body {
     width: 100%;
     text-align: center;
   }
-
   .hero {
     height: 70vh;
-    padding: 0 10px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
 
   .hero-content {
-    height: auto;
+    width: 100%;
     padding: 10px;
-    font-size: 1.0em;
+    font-size: 1.2em;
     white-space: normal;
+    text-align: right; /* Align entire content to right */
   }
 
   .line {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    text-align: right;
     opacity: 0;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    white-space: normal;
     display: block;
+    width: 100%;
+    text-align: right;
     margin: 10px 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .line-1, .line-2 {
-    font-size: 1.0em;
-    text-align: center;
+    font-size: 1.2em;
     animation-name: fadeSlideInOut;
     animation-duration: 6s;
   }
@@ -678,6 +679,7 @@ body {
   .line-2 {
     animation-delay: 3s;
   }
+  
 
   .clients-logos {
     flex-direction: column;
